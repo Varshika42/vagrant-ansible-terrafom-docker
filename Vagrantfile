@@ -71,5 +71,8 @@ config.vm.provision "ansible",  type: "shell", path: "provision/install_ansible.
 config.vm.provision "docker",   type: "shell", path: "provision/install_docker.sh"
 config.vm.provision "terraform",type: "shell", path: "provision/install_terraform.sh"
 
+  config.vm.boot_timeout = 600
+
+
 
 end
